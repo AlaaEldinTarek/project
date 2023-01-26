@@ -16,7 +16,8 @@
           type="text"
           class="form__input"
           autofocus
-          placeholder="Username or email"
+          placeholder="User Email"
+          id="username"
         />
         <div class="form__input-error-message"></div>
       </div>
@@ -26,12 +27,13 @@
           class="form__input"
           autofocus
           placeholder="Password"
+          id="loginPassword"
         />
         <div class="form__input-error-message"></div>
       </div>
-      <button class="form__button" type="submit">Continue</button>
+      <button class="form__button" type="submit" id="submit" name="submit">Continue</button>
       <p class="form__text">
-        <a href="#" class="form__link">Forgot your password?</a>
+        <!-- <a href="#" class="form__link">Forgot your password?</a> -->
       </p>
       <p class="form__text">
         <a class="form__link" href="./" id="linkCreateAccount"
@@ -81,7 +83,14 @@
         />
         <div class="form__input-error-message"></div>
       </div>
-      <button class="form__button" type="submit">Continue</button>
+      <button
+        class="form__button"
+        type="submit"
+        name="submitData"
+        id="submitData"
+      >
+        Continue
+      </button>
       <p class="form__text">
         <a class="form__link" href="./" id="linkLogin"
           >Already have an account? Sign in</a
@@ -89,6 +98,6 @@
       </p>
     </form>
   </div>
-  <script src="./src/main.js"></script>
+  <script  src="./src/main.js"></script>
   <script type="module" src="./src/db.js"></script>
 </body>
